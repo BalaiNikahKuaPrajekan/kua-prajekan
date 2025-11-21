@@ -482,6 +482,24 @@ figcaption {
   font-size: 18px;
 }
 
+.video-card {
+  margin-bottom: 25px;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.judul-video {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+
 
 
 
