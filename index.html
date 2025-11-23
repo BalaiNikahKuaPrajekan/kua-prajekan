@@ -457,11 +457,19 @@ function getBotReply(text) {
     return "Biaya nikah: GRATIS di KUA pada jam kerja. Rp 600.000 jika di luar kantor / weekend.";
   if (text.includes("wa") || text.includes("admin"))
     return "Nomor admin WA: 085331479399 — ketik *ingin bicara admin* nanti kami hubungkan.";
-  return "Terima kasih, pesan Anda sudah diterima 👍";
+  return "Terima kasih, pesan Anda sudah diterima 👍 Admin akan membalas segera.";
 }
 </script>
-</body>
-</html>
+  <!-- Tombol Chat -->
+<div class="chat-toggle">💬</div>
 
+<!-- Widget Chat -->
+<div class="chat-widget">
+  <div class="chat-header">
+    Chat Layanan KUA Prajekan
+    <span class="chat-close">✖</span>
+  </div>
+  <iframe src="page.html" class="chat-frame"></iframe>
+</div>
 </body>
 </html>
