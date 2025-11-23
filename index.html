@@ -471,5 +471,14 @@ function getBotReply(text) {
   </div>
   <iframe src="page.html" class="chat-frame"></iframe>
 </div>
+  <script>
+  document.querySelector(".chat-toggle").onclick = () => {
+    document.querySelector(".chat-widget").style.display = "block";
+  };
+
+  document.querySelector(".chat-close").onclick = () => {
+    document.querySelector(".chat-widget").style.display = "none";
+  };
+</script>
 </body>
 </html>
