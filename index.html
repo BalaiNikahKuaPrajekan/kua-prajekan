@@ -409,5 +409,56 @@ window.onload = function() {
     <button id="sendBtn">➤</button>
   </div>
 </div>
+  <script>
+const openChat = document.getElementById("openChat");
+const chatScreen = document.getElementById("chatScreen");
+const closeChatBtn = document.getElementById("closeChatBtn");
+const chatInput = document.getElementById("chatInput");
+const sendBtn = document.getElementById("sendBtn");
+const chatBody = document.getElementById("chatBody");
+
+openChat.onclick = () => chatScreen.style.display = "flex";
+closeChatBtn.onclick = () => chatScreen.style.display = "none";
+
+sendBtn.onclick = sendMessage;
+chatInput.addEventListener("keypress", e => e.key === "Enter" && sendMessage());
+
+function sendMessage() {
+  let msg = chatInput.value.trim();
+  if (!msg) return;
+
+  // tampilkan pesan user
+  let userDiv = document.createElement("div");
+  userDiv.className = "user-msg";
+  userDiv.innerText = msg;
+  chatBody.appendChild(userDiv);
+  chatBody.scrollTop = chatBody.scrollHeight;
+
+  chatInput.value = "";
+
+  // respon bot (bisa dikembangkan)
+  setTimeout(() => {
+    let botDiv = document.createElement("div");
+    botDiv.className = "bot-msg";
+    botDiv.innerText = getBotReply(msg);
+    chatBody.appendChild(botDiv);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }, 700);
+}
+
+// daftar respon
+function getBotReply(text) {
+  text = text.toLowerCase();
+  if (text.includes("syarat") || text.includes("persyaratan"))
+    return "Persyaratan nikah: surat rekomendasi nikah, N1-N5, fotokopi KTP, KK, pas foto 2x3 & 4x6...";
+  if (text.includes("jadwal"))
+    return "Jadwal nikah dapat dicek melalui SIMKAH atau datang ke KUA Prajekan.";
+  if (text.includes("biaya"))
+    return "Biaya nikah: GRATIS di KUA pada jam kerja. Rp 600.000 jika di luar kantor / weekend.";
+  if (text.includes("wa") || text.includes("admin"))
+    return "Nomor admin WA: 08xxxxxxxx — ketik *ingin bicara admin* nanti kami hubungkan.";
+  return "Terima kasih, pesan Anda sudah diterima 👍";
+}
+</script>
 </body>
 </html>
