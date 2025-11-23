@@ -604,6 +604,62 @@ figcaption {
   font-size: 20px;
   cursor: pointer;
 }
+/* Tombol Chat Kecil */
+.chat-toggle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #0a7b20;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Widget Chat Kecil */
+.chat-widget {
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  border-radius: 14px;
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.28);
+  display: none;
+  overflow: hidden;
+}
+
+/* Header Widget */
+.chat-header {
+  background: #0a7b20;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tombol Close */
+.chat-close {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Isi Chat (iframe) */
+.chat-frame {
+  width: 100%;
+  height: calc(100% - 45px);
+  border: none;
+}
+
 
 
 
