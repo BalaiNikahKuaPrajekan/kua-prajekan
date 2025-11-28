@@ -160,37 +160,49 @@ btn.textContent = box.classList.contains("expanded") ? "Sembunyikan" : "Baca sel
 }
 </script>
 
-    <section class="video-gallery">
-  <h2>Galeri Video KUA Prajekan</h2>
-
-  <div class="video-container">
-
-    <div class="video-card">
-  <video controls poster="thumbnails/thumb-video1.jpg">
-    <source src="video/video1.mp4" type="video/mp4">
-  </video>
-  <p class="judul-video">Para peserta Bimbingan Perkawinan Angkatan XX di KUA Prajekan tampak penuh antusiasme saat mengikuti sesi “Tepuk Sakinah”. Suasana hangat dan penuh kegembiraan terpancar di aula KUA, dipandu langsung oleh Miftahuk Ulum, S.HI. Kegiatan ini tidak hanya mencairkan suasana, tetapi juga menjadi media edukasi untuk menanamkan nilai-nilai keharmonisan dalam kehidupan rumah tangga. Momen penuh tawa dan keceriaan tersebut menjadi salah satu bagian berkesan dari rangkaian Bimwin Angkatan XX di KUA Prajekan.</p>
-</div>
+<!-- GALERI VIDEO KUA PRAJEKAN -->
+<section class="video-gallery">
+<h2>Galeri Video KUA Prajekan</h2>
+<div class="video-container">
 
 <div class="video-card">
-  <video controls poster="thumbnails/thumb-video2.jpg">
-    <source src="video/video2.mp4" type="video/mp4">
-  </video>
-  <p class="judul-video">Prajekan, 27 November 2025 — Akad nikah antara Fandy Febriansyah dan Fadianatasyah di desa walidono berlangsung khidmat di Prajekan dengan wali hakim, HM. Lukman Hakim, S.Ag. Prosesi berjalan lancar di hadapan keluarga dan para saksi. Sebelumnya, kedua mempelai telah mengikuti Bimbingan Perkawinan (Bimwin) di KUA Prajekan tiga hari sebelumnya sebagai bekal dalam membangun keluarga yang sakinah, mawaddah, dan rahmah.</p>
+<video controls poster="thumbnails/thumb-video1.jpg">
+<source src="video/video1.mp4" type="video/mp4">
+</video>
+<div class="readmore-box"><p class="judul-video">Para peserta Bimbingan Perkawinan Angkatan XX di KUA Prajekan tampak penuh antusiasme saat mengikuti sesi “Tepuk Sakinah”. Suasana hangat dan penuh kegembiraan terpancar di aula KUA, dipandu langsung oleh Miftahuk Ulum, S.HI. Kegiatan ini tidak hanya mencairkan suasana, tetapi juga menjadi media edukasi untuk menanamkan nilai-nilai keharmonisan dalam kehidupan rumah tangga. Momen penuh tawa dan keceriaan tersebut menjadi salah satu bagian berkesan dari rangkaian Bimwin Angkatan XX di KUA Prajekan.</p></div>
+<span class="readmore-btn" onclick="toggleReadMore(this)">Baca selengkapnya</span>
 </div>
 
+
 <div class="video-card">
-  <video controls poster="thumbnails/thumb-video3.jpg">
-    <source src="video/video3.mp4" type="video/mp4">
-  </video>
-  <p class="judul-video">Penjemputan Mahasiswi STIA Cendekia Insani Situbondo di KUA Prajekan
+<video controls poster="thumbnails/thumb-video2.jpg">
+<source src="video/video2.mp4" type="video/mp4">
+</video>
+<div class="readmore-box"><p class="judul-video">Prajekan, 27 November 2025 — Akad nikah antara Fandy Febriansyah dan Fadianatasyah di desa walidono berlangsung khidmat di Prajekan dengan wali hakim, HM. Lukman Hakim, S.Ag. Prosesi berjalan lancar di hadapan keluarga dan para saksi. Sebelumnya, kedua mempelai telah mengikuti Bimbingan Perkawinan (Bimwin) di KUA Prajekan tiga hari sebelumnya sebagai bekal dalam membangun keluarga yang sakinah, mawaddah, dan rahmah.</p></div>
+<span class="readmore-btn" onclick="toggleReadMore(this)">Baca selengkapnya</span>
+</div>
+
+
+<div class="video-card">
+<video controls poster="thumbnails/thumb-video3.jpg">
+<source src="video/video3.mp4" type="video/mp4">
+</video>
+<div class="readmore-box"><p class="judul-video">Penjemputan Mahasiswi STIA Cendekia Insani Situbondo di KUA Prajekan
 Kamis, 20 November 2025 — Suasana haru menyelimuti Kantor Urusan Agama (KUA) Prajekan saat kegiatan penjemputan para mahasiswi STIA Cendekia Insani Situbondo oleh Dosen Pembimbing Lapangan, Ahmad Fathoni, M.Ag. Setelah mengikuti rangkaian kegiatan praktik lapangan di KUA Prajekan, para mahasiswi secara resmi dilepas oleh Kepala KUA, H.M. Lukman Hakim, S.Ag, bersama seluruh karyawan.
 Dalam momen tersebut, pihak KUA menyampaikan apresiasi dan doa terbaik agar ilmu dan pengalaman yang diperoleh selama pelaksanaan praktik dapat menjadi bekal berharga untuk perjalanan akademik dan pengabdian di masyarakat. Para mahasiswi juga menyampaikan rasa terima kasih atas bimbingan, arahan, serta penerimaan hangat selama berada di lingkungan KUA Prajekan.
-Kegiatan penjemputan ditutup dengan sesi foto bersama sebagai bentuk kenangan dan silaturahmi yang akan terus terjalin dengan baik.</p>
+Kegiatan penjemputan ditutup dengan sesi foto bersama sebagai bentuk kenangan dan silaturahmi yang akan terus terjalin dengan baik.</p></div>
+<span class="readmore-btn" onclick="toggleReadMore(this)">Baca selengkapnya</span>
 </div>
-
-  </div>
+</div>
 </section>
+
+<script>
+function toggleReadMore(btn) {
+const box = btn.previousElementSibling;
+box.classList.toggle("expanded");
+btn.textContent = box.classList.contains("expanded") ? "Sembunyikan" : "Baca selengkapnya";
+}
+</script>
 
     <section class="berita-terkini">
   <div class="bt-header">
