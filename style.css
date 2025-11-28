@@ -616,3 +616,77 @@ figcaption {
   font-size: 13px;
   color: #555;
 }
+
+/* ==== BERITA TERKINI warna biru footer ==== */
+
+.berita-terkini {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.bt-header h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0b3d91;
+  border-bottom: 3px solid #0b3d91;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.bt-more {
+  color: #0b3d91;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bt-more:hover {
+  text-decoration: underline;
+}
+
+.bt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.bt-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.bt-kategori {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0b3d91;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.bt-judul {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.bt-judul:hover {
+  color: #0b3d91;
+  cursor: pointer;
+}
+
+.bt-tanggal {
+  font-size: 13px;
+  color: #555;
+}
+
