@@ -951,6 +951,17 @@ animation: fadeSlide 25s infinite;
   }
 }
 
+.profile-card {
+  background: 
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), /* overlay putih transparan */
+    url("img/bg-profile-kantor.jpg"); /* foto kantor */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 
 
 
