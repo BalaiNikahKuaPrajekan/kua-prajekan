@@ -1030,6 +1030,25 @@ animation: fadeSlide 25s infinite;
   text-decoration: underline;
 }
 
+.galeri-readmore {
+  max-height: 70px;
+  overflow: hidden;
+  transition: .4s ease;
+}
+
+.galeri-readmore.expanded {
+  max-height: 1000px;
+}
+
+.galeri-readmore-btn {
+  display: inline-block;
+  margin-top: 6px;
+  color: #0b3d91;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 
 
 
