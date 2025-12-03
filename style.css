@@ -8,21 +8,17 @@ body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; background
 .topnav a:hover, .topnav a.active { background:#e9f0ff; }
 .topnav .brand { margin-right:8px; }
 .nav-logo { height:40px; }
-/* ---- Animasi Flip Horizontal (3D) ---- */
 @keyframes flipHorizontal {
   0%   { transform: rotateX(0deg); }
   100% { transform: rotateX(360deg); }
 }
-
 .nav-logo {
   height: 40px;
   transform-origin: center;
-  animation: flipHorizontal 3s linear infinite;
+  animation: flipHorizontal 1s linear infinite;
   display: inline-block;
   backface-visibility: hidden;
 }
-
-/* Opsional: berhenti saat hover */
 .nav-logo:hover {
   animation-play-state: paused;
 }
